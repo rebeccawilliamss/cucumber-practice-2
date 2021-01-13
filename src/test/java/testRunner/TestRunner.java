@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        tags = "",
+        tags = "@windowsU",
         features = {"classpath:features"},
         glue = {"classpath:stepDefinitions"},
         plugin = {"pretty", "html:target/reports"},
@@ -16,3 +16,7 @@ import org.junit.runner.RunWith;
 
 public class TestRunner {
 }
+
+/** Ensure Maven is installed in Environment Variables to
+ * run tests from cmd.
+ */

@@ -3,6 +3,7 @@ Feature: User can register an account
   I need to be able to register an account
   So that I can buy products
 
+  @registerForm
   Scenario: User can register using valid data
     Given I am on the forms page
     When I enter the required data into the form
